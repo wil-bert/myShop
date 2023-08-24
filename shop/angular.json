@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "duka": {
+    "shop": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/duka",
+            "outputPath": "dist/shop",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "duka:build:production"
+              "browserTarget": "shop:build:production"
             },
             "development": {
-              "browserTarget": "duka:build:development"
+              "browserTarget": "shop:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "duka:build"
+            "browserTarget": "shop:build"
           }
         },
         "test": {
@@ -102,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "0d37892a-e135-4c62-b6eb-760bf36cab74"
+    "analytics": "f1170dd4-13ec-4b42-b20e-6c917accdea8"
   }
 }
